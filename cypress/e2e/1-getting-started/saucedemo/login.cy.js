@@ -35,5 +35,4 @@ describe('example to-do app', () => {
         // cy.get('[data-test="password"]').type(password);
         cy.get('[data-test="login-button"]').click();
     });
-
-    })
+})
