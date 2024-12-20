@@ -5,7 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'https://www.saucedemo.com/',
+    baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space',
     retries:{
       // runMode: 2,
       // openMode: 3
