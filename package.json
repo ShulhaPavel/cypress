@@ -4,11 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auto:home-page": "npx cypress run --spec 'cypress/e2e/pom/home-page.cy.js'",
+    "auto:login": "npx cypress run --spec 'cypress/e2e/pom/login.cy.js'",
+    "auto:sign-up": "npx cypress run --spec 'cypress/e2e/pom/sign-up.cy.js'",
+    "auto:garage": "npx cypress run --spec 'cypress/e2e/pom/garage.cy.js'",
+    "auto:expenses-page-with-value": "npx cypress run --spec 'cypress/e2e/pom/expenses-page-with-value.cy.js'",
+    "auto:expenses-empty-page": "npx cypress run --spec 'cypress/e2e/pom/expenses-empty-page.cy.js'",
+    "auto:add-car": "npx cypress run --spec 'cypress/e2e/pom/add-car.cy.js'",
+    "auto:add-an-expense": "npx cypress run --spec 'cypress/e2e/pom/add-an-expense.cy.js'",
+    "auto2:home-page": "npx cypress run --spec 'cypress/e2e/pom/home-page.cy.js' --config-file ./cypress.config.auto2.js",
+    "auto2:login": "npx cypress run --spec 'cypress/e2e/pom/login.cy.js' --config-file ./cypress.config.auto2.js",
+    "auto2:sign-up": "npx cypress run --spec 'cypress/e2e/pom/sign-up.cy.js' --config-file ./cypress.config.auto2.js",
+    "auto2:garage": "npx cypress run --spec 'cypress/e2e/pom/garage.cy.js'",
+    "auto2:expenses-page-with-value": "npx cypress run --spec 'cypress/e2e/pom/expenses-page-with-value.cy.js'",
+    "auto2:expenses-empty-page": "npx cypress run --spec 'cypress/e2e/pom/expenses-empty-page.cy.js'",
+    "auto2:add-car": "npx cypress run --spec 'cypress/e2e/pom/add-car.cy.js'",
+    "auto2:add-an-expense": "npx cypress run --spec 'cypress/e2e/pom/add-an-expense.cy.js'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.16.1"
+    "cypress": "^13.16.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
   }
 }

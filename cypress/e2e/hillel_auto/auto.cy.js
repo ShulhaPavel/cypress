@@ -14,7 +14,7 @@ describe('auto', () => {
         cy.get('.header_right').find('button');
     })
 
-    it.only('Buttons contain text/images', () => {
+    it('Buttons contain text/images', () => {
         cy.get('.header_logo svg').should('have.attr', 'xmlns');
         cy.get('nav a').contains('Home');
         cy.get('nav .header-link').contains('About');
